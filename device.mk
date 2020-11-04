@@ -575,10 +575,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.va_odm.support=1
 
-# DPM
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.dpm.feature=0
-
 # QMI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
