@@ -1,6 +1,8 @@
 [
   {
-    "repository": "android_hardware_sony_timekeep",
-    "target_path": "hardware/sony/timekeep"
+    "repository": "magicxavi/android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep",
+    "branch": "lineage-17.1",
+    "remote":"github"
   }
 ]
