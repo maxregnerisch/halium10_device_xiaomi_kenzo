@@ -12,6 +12,62 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-scan=true
 
+# system.prop for Xiaomi Kenzo
+
+# Set ro.build.type to userdebug or eng if you want adb root access
+ro.build.type=userdebug
+
+# Set the fingerprint to your ROM's fingerprint
+ro.build.fingerprint=xiaomi/kenzo/kenzo:6.0.1/MMB29M/V7.5.3.0.MHOMIDE:user/release-keys
+
+# Set the timezone to your region
+persist.sys.timezone=Asia/Kolkata
+
+# Increase the dalvik heap size for better performance
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heapstartsize=8m
+
+# Improve graphics rendering
+debug.sf.hw=1
+debug.composition.type=gpu
+
+# Enable multi-window support
+persist.sys.debug.multi_window=true
+
+# Enable hardware acceleration for media codecs
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-record=false
+
+# Optimize network settings
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hspa=4096,87380,256960,4096,16384,256960
+
+# Optimize GPS settings
+ro.gps.agps_provider=1
+
+# Optimize SQLite settings
+sqlite3.pcache_size=16384
+sqlite3.page_size=4096
+sqlite3.journal_mode=TRUNCATE
+
+# Optimize UI performance
+ro.sf.compbypass.enable=0
+
+# Improve scrolling performance
+windowsmgr.max_events_per_sec=150
+
+# Improve touch responsiveness
+debug.performance.tuning=1
+
+
 # System prop for RmNet Data
 persist.rmnet.data.enable=true
 persist.data.wda.enable=true
